@@ -15,6 +15,8 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
 - serves as a benchmark for correctness verification and performance comparison.
 
 ## How to Run the Project
+- download ffmpeg through: https://ffmpeg.org/download.html
+- the guide on how to download ffmpeg can be found here: https://phoenixnap.com/kb/ffmpeg-windows
 - open the Visual Studio solution provided in the repository.
 - run the appropriate project (PARCO Integrating Project parallel for the SIMD implementation, or PARCO Integrating Project real for the basic implementation).
 - the output video will be generated in the corresponding folder: PARCO Integrating Project parallel/PARCO Integrating Project parallel or PARCO Integrating Project real/PARCO Integrating Project real
