@@ -20,3 +20,13 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
 - the output video will be generated in the corresponding folder: PARCO Integrating Project parallel/PARCO Integrating Project parallel or PARCO Integrating Project real/PARCO Integrating Project real
 - the default output video is set to 5 FPS for efficiency, as higher FPS requires more processing time.
 - if the input video titled "short.mp4" cant be loaded because it's too large for git, here's an alternative link to copy paste into the folders mentioned above: https://drive.google.com/drive/folders/1gzh8Kjfhrz5VFJ5lVa8d7atMygARJhzE?usp=sharing
+
+## Execution Screenshots
+
+## Parallelization Approach
+
+## Peformance Analysis
+
+## Video Presentation
+
+## Conclusion
