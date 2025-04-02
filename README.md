@@ -90,9 +90,9 @@ The table below shows the execution time of the ViBE algorithm (Non-Parallelized
 |  <img src="screenshots/release5fps.png">     | <img src="screenshots/releaseP5fps.png">  |
 
 The table below shows the execution time of the SIMD and GMM: 
-|      ViBE (Parallelized, 30FPS)           |                  GMM                      |
-| ----------------------------------------- | ----------------------------------------- |
-|  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
+|      ViBE (Non-Parallelized, 30FPS)        |      ViBE (Parallelized, 30FPS)           |                  GMM                      |
+| -----------------------------------------  | ----------------------------------------- | ----------------------------------------- |
+| <img src="screenshots/vibereg30fps.png">   |  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
 
 
 ## Performance Comparison
