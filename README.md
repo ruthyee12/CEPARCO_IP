@@ -158,4 +158,4 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 
 
 ## Video Presentation
-
+- https://youtu.be/LAKqM6pBzGg
