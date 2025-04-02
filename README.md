@@ -119,7 +119,7 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 |  Total Time Threaded GMM (ms)   |                            |                            |     16049.000000        | 
 
 ## Peformance Analysis
-# Debug mode - ViBE Algorithm Performance (at 5 FPS):
+### Debug mode - ViBE Algorithm Performance (at 5 FPS):
 | Implementation                                         | Speedup Ratio |
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.367309899   | 
@@ -129,7 +129,7 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 - By handling 32 pixels per instruction cycle, the algorithm reduces computational workload, significantly improving efficiency—especially for processing large images.
 
 
-# Release mode - ViBE Algorithm Performance (at 5 FPS):
+### Release mode - ViBE Algorithm Performance (at 5 FPS):
 | Implementation                                         | Speedup Ratio |
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.019069002   |
@@ -139,7 +139,7 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 - However, the performance difference between Parallelized and Non-Parallelized ViBE is minimal, indicating that compiler optimizations already improve efficiency.
 - At lower FPS settings, the impact of parallelization is less pronounced.
 
-# Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
+### Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 | Implementation                                         | Speedup Ratio |
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.  ViBE (Parallelized)      | 1.300118431   |
