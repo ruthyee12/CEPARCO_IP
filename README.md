@@ -187,7 +187,7 @@ Total Time for SIMD: 10221.000000 milliseconds<br>
 
 - Some possible explanations:
   - Loop unrolling is optimization feature that allows each loop iteration to be executed in parallel. However, this can make the program larger thus needing to unroll loops into software if there are not enough hardware registers. Most developers and compilers unroll onto software for simplicity, which can lead to more cache misses, hence the inconsistency. (https://www.bitsnbites.eu/three-fundamental-flaws-of-simd/) Many loops are present throughout the code.
-  - Some parts of the ViBE algorithm may not be suitable for SIMD as well due to the use of indexing as there is not a sufficient SIMD operation for pack moving incremental values as well as the prescence of break statements which still requires iteration to check for. 
+  - Some parts of the ViBE algorithm may not be suitable for SIMD as well due to the use of indexing as there is not a sufficient SIMD operation for pack moving incremental values as well as the prescence of break statements which still requires iteration to check for. For situations like these, threading seems to be the better option
 
 ## Video Presentation
 - https://youtu.be/LAKqM6pBzGg
