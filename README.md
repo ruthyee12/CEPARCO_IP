@@ -123,10 +123,19 @@ Debug mode - ViBE Algorithm Performance (at 5 FPS):
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.367309899   | 
 
+- The ViBE (Parallelized) is 1.37x faster than ViBE (Non-Parallelized) in Debug mode. 
+- The performance boost is mainly due to SIMD optimizations, though Debug Mode overhead (such as additional runtime checks) still affects execution.
+- By handling 32 pixels per instruction cycle, the algorithm reduces computational workload, significantly improving efficiency—especially for processing large images.
+
 Release mode - ViBE Algorithm Performance (at 5 FPS):
 | Implementation                                         | Speedup Ratio |
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.019069002   |
+
+- The ViBE (Parallelized) is 1.02x faster than ViBE (Non-Parallelized) in Debug mode.
+- In Release Mode, both versions execute much faster compared to Debug Mode, with an overall reduction in execution time.
+- However, the performance difference between Parallelized and Non-Parallelized ViBE is minimal, indicating that compiler optimizations already improve efficiency.
+- At lower FPS settings, the impact of parallelization is less pronounced.
 
 Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 | Implementation                                         | Speedup Ratio |
@@ -135,7 +144,10 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 | ViBE (Non-Parallelized)  vs.  GMM (Non-Parallelized)   | 1.702448639   |
 | ViBE (Parallelized)  vs.  GMM (Threaded)               | 1.581805638   |
 
-
+- Parallelized ViBE is ~30% faster than the non-parallelized version, showing that SIMD optimizations effectively reduce execution time at a larger data set.
+- Non-parallelized ViBE outperforms non-parallelized GMM by ~70%, indicating that ViBE is inherently more efficient for background subtraction in this implementation.
+- Even when GMM is parallelized with threading, ViBE (Parallelized) is still ~58% faster, suggesting that SIMD optimizations provide a greater speed boost compared to thread-based parallelization alone.
+- The results demonstrate that SIMD-based ViBE is more suitable for real-time background subtraction at 30 FPS, as it achieves lower execution times than both versions of GMM.
 
 
 ## Video Presentation
