@@ -95,6 +95,11 @@ The table below shows the execution time of the SIMD and GMM:
 | -----------------------------------------  | ----------------------------------------- | ----------------------------------------- |
 | <img src="screenshots/vibereg30fps.png">   |  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
 
+Output Video Clips: 
+|                Original                    |                  ViBE                     |                  GMM                      |
+| ------------------------------------------ | ----------------------------------------- | ----------------------------------------- |
+| <img src="screenshots/10secoriginal.png">  |   <img src="screenshots/10secvibe.png">   |    <img src="screenshots/10secgmm.png">   |
+
 
 ## Performance Comparison
 Debug mode - ViBE Algorithm Performance (at 5 FPS):
