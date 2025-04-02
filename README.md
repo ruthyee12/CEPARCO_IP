@@ -154,8 +154,45 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 - Parallelized ViBE is ~30% faster than the non-parallelized version, showing that SIMD optimizations effectively reduce execution time at a larger data set.
 - Non-parallelized ViBE outperforms non-parallelized GMM by ~70%, indicating that ViBE is inherently more efficient for background subtraction in this implementation.
 - Even when GMM is parallelized with threading, ViBE (Parallelized) is still ~58% faster, suggesting that SIMD optimizations provide a greater speed boost compared to thread-based parallelization alone.
-- The results demonstrate that SIMD-based ViBE is more suitable for real-time background subtraction at 30 FPS, as it achieves lower execution times than both versions of GMM.
+- The results demonstrate that SIMD-based ViBE can be more suitable for real-time background subtraction at 30 FPS, as it achieves lower execution times than both versions of GMM.
 
+## Other Notes
+- Execution times can be inconsistent sometimes; Non-parallelized ViBE may outperform the parallelized version
+- Below is a quick overview of other execution rounds of Release Mode ViBE at 30fps:
+-----------
+Avg Time for C: 9.915799 milliseconds
+Total Time for C: 20962.000000 milliseconds
+
+Avg Time for SIMD: 8.721854 milliseconds
+Total Time for SIMD: 18438.000000 milliseconds
+-----------
+Avg Time for C: 9.369318 milliseconds
+Total Time for C: 3298.000000 milliseconds
+
+Avg Time for SIMD: 7.943182 milliseconds
+Total Time for SIMD: 2796.000000 milliseconds
+-----------
+Avg Time for C: 9.204545 milliseconds
+Total Time for C: 3240.000000 milliseconds
+
+Avg Time for SIMD: 7.946023 milliseconds
+Total Time for SIMD: 2797.000000 milliseconds
+-----------
+Avg Time for C: 4.453169 milliseconds
+Total Time for C: 9414.000000 milliseconds
+
+Avg Time for SIMD: 5.860927 milliseconds
+Total Time for SIMD: 12390.000000 milliseconds
+-----------
+Avg Time for C: 4.451750 milliseconds
+Total Time for C: 9411.000000 milliseconds
+
+Avg Time for SIMD: 4.834910 milliseconds
+Total Time for SIMD: 10221.000000 milliseconds
+-----------
+- Some possible explanations:
+  - Loop unrolling is optimization feature that allows each loop iteration to be executed in parallel. However, this can make the program larger thus needing to unroll loops into software if there are not enough hardware registers. Most developers and compilers unroll onto software for simplicity, which can lead to more cache misses, hence the inconsistency. (https://www.bitsnbites.eu/three-fundamental-flaws-of-simd/) Many loops are present throughout the code.
+  - Some parts of the ViBE algorithm may not be suitable for SIMD as well due to the use of indexing as there is not a sufficient SIMD operation for pack moving incremental values as well as the prescence of break statements which still requires iteration to check for. 
 
 ## Video Presentation
 - https://youtu.be/LAKqM6pBzGg
