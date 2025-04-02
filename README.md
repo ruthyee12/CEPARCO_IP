@@ -30,6 +30,15 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
   - Download OpenCV: https://github.com/opencv/opencv/releases
 
 ## Execution Screenshots
+|                    SIMD                   |                  GMM                      |
+| ----------------------------------------- | ----------------------------------------- |
+|  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
+
+
+|          Real (Non-Parallelized)          |          Parallel (Parallelized)          |
+| ----------------------------------------- | ----------------------------------------- |
+|  <img src="screenshots/realexec.png">     | <img src="screenshots/parallelexec.png">  |
+
 
 ## Parallelization Approach
 ### (1) Original ViBE Algorithm (without AVX)
