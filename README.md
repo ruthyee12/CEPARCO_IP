@@ -26,7 +26,23 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
 ## Execution Screenshots
 
 ## Parallelization Approach
+### (1) Original ViBE Algorithm (without AVX)
+In the original, sequential Vibe algorithm:
+- Each pixel in the current image is compared with the corresponding pixel in the history image.
+- If the difference between the pixel values exceeds a predefined threshold, the pixel is marked for further processing.
+- The segmentation map is updated based on the threshold check, one pixel at a time.
 
+This approach processes pixels individually, which becomes inefficient for large images due to the lack of parallelism.
+### (2) Parallelized ViBE Algorithm (with AVX)
+In the AVX parallelized version of the Vibe algorithm, we performed several key optimizations:
+1. Vectorized Loading: Instead of processing each pixel individually, we load 32 pixels into a single 256-bit AVX register, enabling parallel processing of multiple pixels at once.
+2. Broadcast Threshold: The threshold value is broadcast across all 32 positions in the AVX register, ensuring that every pixel in the vector uses the same threshold for comparison.
+3. Vectorized Subtraction: The absolute differences between the current image pixels and the corresponding pixels in the history image are computed simultaneously for all 32 pixels using SIMD instructions.
+4. Threshold Comparison: The absolute differences are compared with the threshold in parallel, with each comparison being performed for all 32 pixels in a single instruction.
+5. Segmentation Update: The segmentation map is updated in parallel by modifying the segmentation values for all 32 pixels simultaneously, based on the comparison results.
+6. These optimizations leverage AVX to process 32 pixels at a time, significantly improving the efficiency and speed of the algorithm.
+
+By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
 ## Peformance Analysis
 
 ## Video Presentation
