@@ -17,6 +17,7 @@
 #include <ctype.h>
 #include <sys/stat.h>
 #include <time.h>
+#include <windows.h>
 
 #define _CRT_SECURE_NO_WARNINGS
 #define MAX_PATH_LENGTH 512
@@ -393,6 +394,8 @@ int main(int argc, char** argv) {
 
     double avg_time = total_time / num_files;
     printf("\n\nAvg Time for C: %llf milliseconds\n", avg_time);
+    printf("Total Time for C: %llf milliseconds\n", total_time);
+
 
     return 0;
 }

@@ -17,6 +17,7 @@
 #include <ctype.h>
 #include <sys/stat.h>
 #include <time.h>
+#include <windows.h>
 
 #define _CRT_SECURE_NO_WARNINGS
 #define MAX_PATH_LENGTH 512
@@ -391,8 +392,10 @@ int main(int argc, char** argv) {
     }
     free(file_list);
 
-    double avg_time = time_taken / num_files;
+    double avg_time = total_time / num_files;
     printf("\n\nAvg Time for SIMD: %llf milliseconds\n", avg_time);
+    printf("Total Time for SIMD: %llf milliseconds\n", total_time);
+
 
     return 0;
 }
