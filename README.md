@@ -151,13 +151,13 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 | ViBE (Non-Parallelized)  vs.  GMM (Non-Parallelized)   | 1.702448639   |
 | ViBE (Parallelized)  vs.  GMM (Threaded)               | 1.581805638   |
 
-- Parallelized ViBE is ~30% faster than the non-parallelized version, showing that SIMD optimizations effectively reduce execution time at a larger data set.
+- Parallelized ViBE is ~30% faster than the non-parallelized version, showing that SIMD optimizations have the potential to reduce execution time at a larger data set.
 - Non-parallelized ViBE outperforms non-parallelized GMM by ~70%, indicating that ViBE is inherently more efficient for background subtraction in this implementation.
 - Even when GMM is parallelized with threading, ViBE (Parallelized) is still ~58% faster, suggesting that SIMD optimizations provide a greater speed boost compared to thread-based parallelization alone.
-- The results demonstrate that SIMD-based ViBE can be more suitable for real-time background subtraction at 30 FPS, as it achieves lower execution times than both versions of GMM.
+- The results demonstrate that SIMD-based ViBE can possibly be more suitable for real-time background subtraction at 30 FPS, as it achieves lower execution times than both versions of GMM in this implementation.
 
 ## Other Notes
-- Execution times can be inconsistent sometimes; Non-parallelized ViBE may outperform the parallelized version
+- While speedups are present, execution times can be inconsistent sometimes; Non-parallelized ViBE may outperform the parallelized version
 - Below is a quick overview of other execution rounds of Release Mode ViBE at 30fps:
 
 Avg Time for C: 9.915799 milliseconds <br>
