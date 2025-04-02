@@ -55,6 +55,14 @@ Instead of processing each pixel sequentially, we now leverage AVX registers to 
 - Threshold Comparison: Each comparison is done for 32 pixels in a single instruction.
 - Segmentation Update: The segmentation map is updated in parallel, modifying 32 pixels at once.
 
+(1) First History Image Processing and (2) Next History Image Processing (Function Call)
+
+<img src="screenshots/avxinmain.png">
+
+(3) Output Mask (Function Call)
+
+<img src="screenshots/avxinmain_mask.png">
+
 First History Image Processing (AVX-Optimized):
 
 <img src="screenshots/firstavx.png">
