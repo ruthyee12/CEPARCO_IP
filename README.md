@@ -81,4 +81,3 @@ By processing 32 pixels per instruction cycle, we reduce the number of operation
 
 ## Video Presentation
 
-## Conclusion
