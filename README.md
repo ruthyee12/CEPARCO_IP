@@ -27,7 +27,7 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
 
 ## Parallelization Approach
 ### (1) Original ViBE Algorithm (without AVX)
-In the original, sequential Vibe algorithm:
+In the original, sequential ViBE algorithm:
 - Each pixel in the current image is compared with the corresponding pixel in the history image.
 - If the difference between the pixel values exceeds a predefined threshold, the pixel is marked for further processing.
 - The segmentation map is updated based on the threshold check, one pixel at a time.
