@@ -33,6 +33,7 @@ In the original, sequential ViBE algorithm:
 - The segmentation map is updated based on the threshold check, one pixel at a time.
   
 This is done in the following steps: 
+
 (1) First History Image Processing and (2) Next History Image Processing 
 
 <img src="screenshots/original.png">
