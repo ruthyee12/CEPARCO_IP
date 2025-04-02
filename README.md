@@ -3,8 +3,7 @@
 ## Overview
 This project focuses on optimizing the ViBE background subtraction algorithm using SIMD (Single Instruction, Multiple Data) parallelization with AVX/AVX2 instructions. The implementation is designed for processing CCTV or stationary camera footage in real-time, providing an efficient method for background subtraction on devices lacking GPU acceleration.
 
-To ensure correctness and efficiency, a non-parallelized C/C++ benchmark implementation is provided for verification. Performance comparisons are conducted against other parallelized background subtraction methods, including OpenCV's Gaussian Mixture Model and frame difference algorithms.
-
+To ensure correctness and efficiency, a non-parallelized C/C++ benchmark implementation is provided for verification. Parallelized ViBE was also conducted against OpenCV's Gaussian Mixture Model algorithm, parallelized through threads. 
 ## Project Structure
 ### (1) PARCO Integrating Project parallel
 - contains the parallelized ViBE algorithm utilizing SIMD operations.
@@ -13,6 +12,10 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
 ### (2) PARCO Integrating Project real
 - contains the basic, non-parallelized C implementation of the ViBE algorithm.
 - serves as a benchmark for correctness verification and performance comparison.
+### (3) GMM
+- implements the Gaussian Mixture Model (GMM) for background subtraction.
+- utilizes multithreading to parallelize computations across multiple CPU cores.
+- designed to compare performance against the optimized ViBE algorithm.
 
 ## How to Run the Project
 - download ffmpeg through: https://ffmpeg.org/download.html
