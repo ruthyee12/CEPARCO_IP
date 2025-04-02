@@ -118,6 +118,25 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 |  Total Time Threaded GMM (ms)   |                            |                            |     16049.000000        | 
 
 ## Peformance Analysis
+Debug mode - ViBE Algorithm Performance (at 5 FPS):
+| Implementation                                         | Speedup Ratio |
+|--------------------------------------------------------|---------------|
+| ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.367309899   | 
+
+Release mode - ViBE Algorithm Performance (at 5 FPS):
+| Implementation                                         | Speedup Ratio |
+|--------------------------------------------------------|---------------|
+| ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.019069002   |
+
+Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
+| Implementation                                         | Speedup Ratio |
+|--------------------------------------------------------|---------------|
+| ViBE (Non-Parallelized)  vs.  ViBE (Parallelized)      | 1.300118431   |
+| ViBE (Non-Parallelized)  vs.  GMM (Non-Parallelized)   | 1.702448639   |
+| ViBE (Parallelized)  vs.  GMM (Threaded)               | 1.581805638   |
+
+
+
 
 ## Video Presentation
 
