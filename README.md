@@ -32,10 +32,16 @@ In the original, sequential ViBE algorithm:
 - If the difference between the pixel values exceeds a predefined threshold, the pixel is marked for further processing.
 - The segmentation map is updated based on the threshold check, one pixel at a time.
   
-This is done in two main steps: (1) First History Image Processing and (2) Next History Image Processing 
+This is done in the following steps: 
+(1) First History Image Processing and (2) Next History Image Processing 
+
 <img src="screenshots/original.png">
 
-This approach processes pixels individually, which becomes inefficient for large images due to the lack of parallelism
+(3) Output Mask
+
+<img src="screenshots/originalmask.png">
+
+This approach processes pixels individually, which becomes inefficient for large images due to the lack of parallelism.
 
 ### (2) Parallelized ViBE Algorithm (with AVX)
 Instead of processing each pixel sequentially, we now leverage AVX registers to process 32 pixels simultaneously. The key optimizations include:
@@ -52,6 +58,10 @@ First History Image Processing (AVX-Optimized):
 Next History Image Processing (AVX-Optimized):
 
 <img src="screenshots/nextavx.png">
+
+Output Mask (AVX-Optimized):
+
+<img src="screenshots/maskavx.png">
 
 By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
 
