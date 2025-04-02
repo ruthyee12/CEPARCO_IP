@@ -139,7 +139,7 @@ Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
 |--------------------------------------------------------|---------------|
 | ViBE (Non-Parallelized)  vs.   ViBE (Parallelized)     | 1.019069002   |
 
-- The ViBE (Parallelized) is 1.02x faster than ViBE (Non-Parallelized) in Debug mode.
+- The ViBE (Parallelized) is 1.02x faster than ViBE (Non-Parallelized) in Release mode.
 - In Release Mode, both versions execute much faster compared to Debug Mode, with an overall reduction in execution time.
 - However, the performance difference between Parallelized and Non-Parallelized ViBE is minimal, indicating that compiler optimizations already improve efficiency.
 - At lower FPS settings, the impact of parallelization is less pronounced.
