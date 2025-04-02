@@ -46,9 +46,11 @@ Instead of processing each pixel sequentially, we now leverage AVX registers to 
 - Segmentation Update: The segmentation map is updated in parallel, modifying 32 pixels at once.
 
 First History Image Processing (AVX-Optimized)
+
 <img src="screenshots/firstavx.png">
 
 Next History Image Processing (AVX-Optimized)
+
 <img src="screenshots/nextavx.png">
 
 By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
