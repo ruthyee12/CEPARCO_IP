@@ -87,7 +87,7 @@ The table below shows the execution time of the ViBE algorithm (Non-Parallelized
 The table below shows the execution time of the ViBE algorithm (Non-Parallelized and Parallelized) - Release mode:
 |          ViBE (Non-Parallelized)          |          ViBE (Parallelized)              |
 | ----------------------------------------- | ----------------------------------------- |
-|  <img src="screenshots/real5fps.png">     | <img src="screenshots/parallel5fps.png">  |
+|  <img src="screenshots/release5fps.png">     | <img src="screenshots/releaseP5fps.png">  |
 
 The table below shows the execution time of the SIMD and GMM: 
 |      ViBE (Parallelized, 30FPS)           |                  GMM                      |
