@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\Users\Theoni\source\repos\GMM\Source.cpp(130,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
+C:\Users\Theoni\source\repos\GMM\Source.cpp(131,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
+  Generating code
+  311 of 318 functions (97.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Project4.vcxproj -> C:\Users\Theoni\source\repos\GMM\x64\Release\GMM.exe
