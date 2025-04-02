@@ -98,7 +98,7 @@ The table below shows the execution time of the SIMD and GMM:
 Output Video Clips: 
 |                Original                    |                  ViBE                     |                  GMM                      |
 | ------------------------------------------ | ----------------------------------------- | ----------------------------------------- |
-| <img src="screenshots/10secoriginal.png">  |   <img src="screenshots/10secvibe.png">   |    <img src="screenshots/10secgmm.png">   |
+| <img src="screenshots/10secorig.png">      |   <img src="screenshots/10secvibe.png">   |    <img src="screenshots/10secgmm.png">   |
 
 
 ## Performance Comparison
