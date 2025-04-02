@@ -40,7 +40,6 @@ In the AVX parallelized version of the Vibe algorithm, we performed several key 
 3. Vectorized Subtraction: The absolute differences between the current image pixels and the corresponding pixels in the history image are computed simultaneously for all 32 pixels using SIMD instructions.
 4. Threshold Comparison: The absolute differences are compared with the threshold in parallel, with each comparison being performed for all 32 pixels in a single instruction.
 5. Segmentation Update: The segmentation map is updated in parallel by modifying the segmentation values for all 32 pixels simultaneously, based on the comparison results.
-6. These optimizations leverage AVX to process 32 pixels at a time, significantly improving the efficiency and speed of the algorithm.
 
 By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
 ## Peformance Analysis
