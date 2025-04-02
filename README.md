@@ -29,17 +29,6 @@ To ensure correctness and efficiency, a non-parallelized C/C++ benchmark impleme
   - Tutorial (can just watch the installation part): https://youtu.be/2FYm3GOonhk?t=262
   - Download OpenCV: https://github.com/opencv/opencv/releases
 
-## Execution Screenshots
-|                    SIMD                   |                  GMM                      |
-| ----------------------------------------- | ----------------------------------------- |
-|  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
-
-
-|          Real (Non-Parallelized)          |          Parallel (Parallelized)          |
-| ----------------------------------------- | ----------------------------------------- |
-|  <img src="screenshots/realexec.png">     | <img src="screenshots/parallelexec.png">  |
-
-
 ## Parallelization Approach
 ### (1) Original ViBE Algorithm (without AVX)
 In the original, sequential ViBE algorithm:
@@ -88,6 +77,45 @@ Output Mask (AVX-Optimized):
 <img src="screenshots/maskavx.png">
 
 By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
+
+## Execution Screenshots
+The table below shows the execution time of the ViBE algorithm (Non-Parallelized and Parallelized) - Debug mode:
+|          ViBE (Non-Parallelized)          |          ViBE (Parallelized)              |
+| ----------------------------------------- | ----------------------------------------- |
+|  <img src="screenshots/realexec.png">     | <img src="screenshots/parallelexec.png">  |
+
+The table below shows the execution time of the ViBE algorithm (Non-Parallelized and Parallelized) - Release mode:
+|          ViBE (Non-Parallelized)          |          ViBE (Parallelized)              |
+| ----------------------------------------- | ----------------------------------------- |
+|  <img src="screenshots/releaseN.png">     | <img src="screenshots/releaseP.png">  |
+
+The table below shows the execution time of the SIMD and GMM: 
+|      ViBE (Parallelized, 30FPS)           |                  GMM                      |
+| ----------------------------------------- | ----------------------------------------- |
+|  <img src="screenshots/simdexec.png">     | <img src="screenshots/gmmexec.png">       |
+
+
+## Performance Comparison
+Debug mode - ViBE Algorithm Performance (at 5 FPS):
+| Implementation                  |     ViBE (Non-Parallelized) |   ViBE (Parallelized)     | 
+|---------------------------------|-----------------------------|---------------------------|
+| Average Execution Time (ms)     |          19.130682          |   13.991477               |  
+| Total Execution Time (ms)       |            6734.000000      |     4925.000000           | 
+
+Release mode - ViBE Algorithm Performance (at 5 FPS):
+| Implementation                  |     ViBE (Non-Parallelized) |   ViBE (Parallelized)     | 
+|---------------------------------|-----------------------------|---------------------------|
+| Average Execution Time (ms)     |          4.031250           |       4.718750            |  
+| Total Execution Time (ms)       |          1419.000000        |      1661.000000          | 
+
+
+Release mode - ViBE Algorithm (at 30 FPS) vs GMM:
+|                                 | ViBE (Parallelized, 30FPS) |           GMM           | 
+|---------------------------------|----------------------------|-------------------------|
+|  Average Execution Time (ms)    |          4.799432          |                         | 
+|  Total Execution Time (ms)      |         10146.000000       |                         | 
+|  Total Time C GMM (ms)          |                            |     22457.000000        | 
+|  Total Time Threaded GMM (ms)   |                            |     16049.000000        | 
 
 ## Peformance Analysis
 
