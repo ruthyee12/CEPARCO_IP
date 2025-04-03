@@ -1,9 +1,2 @@
-﻿  vibe-background-sequential.c
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(271,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(333,86): warning C4090: 'function': different 'const' qualifiers
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(347,81): warning C4090: 'function': different 'const' qualifiers
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(428,64): warning C4090: 'function': different 'const' qualifiers
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(597,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(602,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(780,19): warning C4018: '<': signed/unsigned mismatch
+﻿  Performing Custom Build Tools
   PARCO Integrating Project parallel.vcxproj -> C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\x64\Debug\PARCO Integrating Project parallel.exe

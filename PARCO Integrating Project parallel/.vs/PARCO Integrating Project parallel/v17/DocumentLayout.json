@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|solutionrelative:PARCO Integrating Project parallel\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\UpdateInnerBorder.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|solutionrelative:PARCO Integrating Project parallel\\UpdateInnerBorder.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|solutionrelative:PARCO Integrating Project parallel\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97EB44EC-A451-4F7C-8716-7EFDEBE47D0F}|PARCO Integrating Project parallel\\PARCO Integrating Project parallel.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\next_history.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UpdateInnerBorder.asm",
               "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\UpdateInnerBorder.asm",
               "RelativeDocumentMoniker": "PARCO Integrating Project parallel\\UpdateInnerBorder.asm",
               "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\UpdateInnerBorder.asm",
               "RelativeToolTip": "PARCO Integrating Project parallel\\UpdateInnerBorder.asm",
-              "ViewState": "AgIAAMIBAAAAAAAAAAAowPEBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-03T00:23:51.76Z",
               "EditorCaption": ""
@@ -105,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "vibe-background-sequential.c",
               "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project parallel\\PARCO Integrating Project parallel\\vibe-background-sequential.c",
               "RelativeDocumentMoniker": "PARCO Integrating Project parallel\\vibe-background-sequential.c",

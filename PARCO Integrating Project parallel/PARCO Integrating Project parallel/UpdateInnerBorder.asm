@@ -4,7 +4,7 @@ section .data
     x_column dq 0
     index dq 0
     shift dq 0
-    fmt_string db "%p", 10, 0  ; "%p\n", 10 (newline), null terminator
+    ;fmt_string db "%p", 10, 0  ; "%p\n", 10 (newline), null terminator
     
     ; to determine from what ptr we are column-lead accessing 32 pixels
     jump_ptr dq 0
@@ -50,7 +50,7 @@ UpdateInnerBorder:
     push r14
     push r15
     mov rbp, rsp
-    add rbp, 80 ; from bottom of stack: r15, r14, r13, r12, rbx, rdi, rsi, rbp, return
+    add rbp, 72 ; from bottom of stack: r15, r14, r13, r12, rbx, rdi, rsi, rbp, return
     ; sub rsp, 32 for each ymm6+ reg
     ; vmovdqu [rsp], ymm6+
     ; sub rsp, 16 for each xmm6+ reg
@@ -89,7 +89,6 @@ UpdateInnerBorder:
     ; rdx = remaining single loops (to be handled after 32 width pixel-wise handling)
     mov dword [remaining_loops], edx ; remaining loops in rdx
     mov r12d, eax ; r12d = has the widthforLoopcounters
-    dec r12d
     mov rsi, 1 ; for x = 1 (index for the width)
     vxorps ymm1, ymm1 ; for 0 comparison of COLOR_BACKGROUND == 0
     vxorps xmm1, xmm1 ; for 0 comparison of COLOR_BACKGROUND == 0
@@ -188,7 +187,6 @@ UpdateInnerBorder:
     mov rax, [jump_ptr]
     mov r13d, dword [rax+rdx*4] ; r13 = indY = jump[shift]
     mov r12d, dword [remaining_loops] ;r12 to be used against rbx if < r12
-    add r12d, 32
     ;x = (rsi-1)*32 + 1
     mov rcx, rsi
     dec rcx
