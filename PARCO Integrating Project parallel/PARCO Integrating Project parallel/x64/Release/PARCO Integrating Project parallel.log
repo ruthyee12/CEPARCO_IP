@@ -1,11 +1,25 @@
-﻿  main.c
+﻿  Performing Custom Build Tools
+  Performing Custom Build Tools
+  Performing Custom Build Tools
+  main.c
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(9578,9): warning C4005: 'COLOR_BACKGROUND': macro redefinition
-C:\Users\Theoni\Desktop\CEPARCO GIT\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(22,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
-C:\Users\Theoni\Desktop\CEPARCO GIT\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(396,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
-C:\Users\Theoni\Desktop\CEPARCO GIT\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(397,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
-  Generating code
-  1 of 34 functions ( 2.9%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  PARCO Integrating Project parallel.vcxproj -> C:\Users\Theoni\Desktop\CEPARCO GIT\CEPARCO_IP\PARCO Integrating Project parallel\x64\Release\PARCO Integrating Project parallel.exe
+  (compiling source file 'main.c')
+      C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.h(53,9):
+      see previous definition of 'COLOR_BACKGROUND'
+  
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(22,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+      C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(22,9):
+      '_CRT_SECURE_NO_WARNINGS' previously declared on the command line
+  
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(396,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\main.c(397,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
+  vibe-background-sequential.c
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(271,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(333,86): warning C4090: 'function': different 'const' qualifiers
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(347,81): warning C4090: 'function': different 'const' qualifiers
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(424,64): warning C4090: 'function': different 'const' qualifiers
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(594,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(599,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\PARCO Integrating Project parallel\vibe-background-sequential.c(777,19): warning C4018: '<': signed/unsigned mismatch
+vibe-background-sequential.obj : error LNK2001: unresolved external symbol UpdateInnerBorder
+C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project parallel\x64\Release\PARCO Integrating Project parallel.exe : fatal error LNK1120: 1 unresolved externals

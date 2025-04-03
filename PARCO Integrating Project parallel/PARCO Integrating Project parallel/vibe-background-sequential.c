@@ -53,7 +53,7 @@ Likewise, instead of a random selection of the neighboring model to be updated, 
 first_history(uint32_t n, uint8_t matchingThreshold, uint8_t matchingNumber, uint8_t* historyImage, uint8_t* image_data, uint8_t* segmentation_map);
 next_history(uint32_t n, uint8_t matchingThreshold, uint8_t matchingNumber, uint8_t* historyImage, uint8_t* image_data, uint8_t* segmentation_map);
 output_mask(uint32_t n, uint8_t* mask, uint8_t color_foreground, int neg1);
-
+//UpdateInnerBorder(uint32_t width, uint32_t height, uint32_t* jump, uint32_t* position, int* neighbor, uint8_t* image_data, uint8_t* updating_mask, uint8_t* historyImage, uint8_t* historyBuffer);
 
 #define NUMBER_OF_HISTORY_IMAGES 2
 
@@ -420,6 +420,8 @@ int32_t libvibeModel_Sequential_Update_8u_C1R(
     /* All the frame, except the border. */
     uint32_t shift, indX, indY;
     int x, y;
+
+    //UpdateInnerBorder(width, height, jump, position, neighbor, image_data, updating_mask, historyImage, historyBuffer);
 
     for (y = 1; y < height - 1; ++y) {
         shift = rand() % width;

@@ -1,5 +1,1 @@
-﻿  main.c
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(9578,9): warning C4005: 'COLOR_BACKGROUND': macro redefinition
-C:\Users\Theoni\source\repos\PARCO Integrating Project real\PARCO Integrating Project real\main.c(21,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
-C:\Users\Theoni\source\repos\PARCO Integrating Project real\PARCO Integrating Project real\main.c(393,12): warning C4475: 'printf' : length modifier 'll' cannot be used with type field character 'f' in format specifier
-  PARCO Integrating Project real.vcxproj -> C:\Users\Theoni\source\repos\PARCO Integrating Project real\x64\Debug\PARCO Integrating Project real.exe
+﻿  PARCO Integrating Project real.vcxproj -> C:\Users\Lance\source\repos\ruthyee12\CEPARCO_IP\PARCO Integrating Project real\x64\Debug\PARCO Integrating Project real.exe
