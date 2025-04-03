@@ -50,7 +50,7 @@ UpdateInnerBorder:
     push r14
     push r15
     mov rbp, rsp
-    add rbp, 72 ; from bottom of stack: r15, r14, r13, r12, rbx, rdi, rsi, rbp, return
+    add rbp, 80 ; from bottom of stack: r15, r14, r13, r12, rbx, rdi, rsi, rbp, return
     ; sub rsp, 32 for each ymm6+ reg
     ; vmovdqu [rsp], ymm6+
     ; sub rsp, 16 for each xmm6+ reg
@@ -103,11 +103,20 @@ UpdateInnerBorder:
     mov rbx, r11            ; Modulo height
     div rbx                 ; EDX = Remainder (random number)
     ; rdx is now shift
-    
-    mov rbx, rdx
     ; put jump[shift] in r13 = indY
-    mov rax, dword [jump_ptr]
-    mov r13d, dword [rax + rdx] ; r13 = indY = jump[shift]
+    xor rax, rax
+    mov r14, [jump_ptr]
+    
+    ;lea rcx, fmt_string
+    ;mov rdx, [jump_ptr]  ; Print stored pointer
+    ;call printf
+
+    ;lea rcx, fmt_string
+    ;mov r14d, [r14+8]
+    ;mov rdx, r14  ; Print address of jump_ptr itself
+    ;call printf
+
+    mov r13d, [r14 + rdx*4] ; r13 = indY = jump[shift]
 
     
     ;upon new width iteration, modify x accordingly (in this case, rcx)
@@ -123,7 +132,7 @@ UpdateInnerBorder:
         
         ; obtain int index
         ; r13 = indY
-        mov r9, r13 ; r9 = indY
+        mov r9d, r13d ; r9 = indY
         imul r9, r10 ;r9 = IndY*width
         
         mov rcx, [x_column] ; rcx = x
@@ -177,8 +186,7 @@ UpdateInnerBorder:
     
     ; put jump[shift] in r13 = indY
     mov rax, [jump_ptr]
-    add rax, rdx
-    mov r13d, dword [rax] ; r13 = indY = jump[shift]
+    mov r13d, dword [rax+rdx*4] ; r13 = indY = jump[shift]
     mov r12d, dword [remaining_loops] ;r12 to be used against rbx if < r12
     add r12d, 32
     ;x = (rsi-1)*32 + 1
@@ -256,12 +264,12 @@ handleRemaining_heightWhileLoop:
         ; rdx = shift, r9  = index
         mov rax, [neighbor_ptr]
         xor r14, r14
-        mov r14d, dword [rax + rdx] ; r14 = neighbor[shift]
+        mov r14d, dword [rax + rdx*4] ; r14 = neighbor[shift]
         add r14d, r9d ; r14 = index_neighbor = index + neighbor[shift];
         
         mov rax, [position_ptr]
         xor r15, r15
-        mov r15d, dword [rax + rdx] ; r15 = position[shift]
+        mov r15d, dword [rax + rdx*4] ; r15 = position[shift]
         
         cmp r15d, 2
         jl rem_indiv_zero_if_pos_lessthan_num_History_Images
@@ -300,12 +308,12 @@ all_zeroes_ymm:
      ; rdx = shift, r9  = index
     mov rax, [neighbor_ptr]
     xor r14, r14
-    mov r14d, dword [rax + rdx] ; r14 = neighbor[shift]
+    mov r14d, dword [rax + rdx*4] ; r14 = neighbor[shift]
     add r14d, r9d ; r14 = index_neighbor = index + neighbor[shift];
     
     mov rax, [position_ptr]
     xor r15, r15
-    mov r15d, dword [rax + rdx] ; r15 = position[shift]
+    mov r15d, dword [rax + rdx*4] ; r15 = position[shift]
     
     cmp r15d, 2
      jl all_zeroes_ymm_if_pos_lessthan_num_History_Images
@@ -381,12 +389,12 @@ all_zeroes_xmm0:
     ; rdx = shift, r9  = index
     mov rax, [neighbor_ptr]
     xor r14, r14
-    mov r14d, dword [rax + rdx] ; r14 = neighbor[shift]
+    mov r14d, dword [rax + rdx*4] ; r14 = neighbor[shift]
     add r14d, r9d ; r14 = index_neighbor = index + neighbor[shift];
     
     mov rax, [position_ptr]
     xor r15, r15
-    mov r15d, dword [rax + rdx] ; r15 = position[shift]
+    mov r15d, dword [rax + rdx*4] ; r15 = position[shift]
     
     cmp r15d, 2
     jl all_zeroes_xmm_if_pos_lessthan_num_History_Images
@@ -444,13 +452,13 @@ individual_zero:
     ; xmm0 has value = image_data[index]
     ; rdx = shift, r9  = index
     mov rax, [neighbor_ptr]
-    mov r14d, dword [rax + rdx] ; r14 = neighbor[shift]
+    mov r14d, dword [rax + rdx*4] ; r14 = neighbor[shift]
     xor r14, r14
     add r14d, r9d ; r14 = index_neighbor = index + neighbor[shift];
     
     mov rax, [position_ptr]
     xor r15, r15
-    mov r15d, dword [rax + rdx] ; r15 = position[shift]
+    mov r15d, dword [rax + rdx*4] ; r15 = position[shift]
     
     cmp r15d, 2
     jl indiv_zero_if_pos_lessthan_num_History_Images
