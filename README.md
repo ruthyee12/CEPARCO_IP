@@ -47,6 +47,10 @@ This is done in the following steps:
 
 <img src="screenshots/originalmask.png">
 
+(4) Update Function
+
+<img src="screenshots/updatereal.png">
+
 This approach processes pixels individually, which becomes inefficient for large images due to the lack of parallelism.
 
 ### (2) Parallelized ViBE Algorithm (with AVX)
@@ -65,6 +69,10 @@ Instead of processing each pixel sequentially, we now leverage AVX registers to 
 
 <img src="screenshots/avxinmain_mask.png">
 
+(4) Update Function 
+
+<img src="screenshots/updateparallel.png">
+
 First History Image Processing (AVX-Optimized):
 
 <img src="screenshots/firstavx.png">
@@ -76,6 +84,10 @@ Next History Image Processing (AVX-Optimized):
 Output Mask (AVX-Optimized):
 
 <img src="screenshots/maskavx.png">
+
+Update Function (AVX-Optimized):
+
+<img src="screenshots/updateavx.png">
 
 By processing 32 pixels per instruction cycle, we reduce the number of operations and speed up the algorithm significantly, especially for large images.
 
