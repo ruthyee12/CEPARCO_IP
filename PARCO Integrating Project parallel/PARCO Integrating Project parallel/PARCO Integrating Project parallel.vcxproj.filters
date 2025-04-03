@@ -32,6 +32,9 @@
     <CustomBuild Include="output_mask.asm">
       <Filter>Source Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="UpdateInnerBorder.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vibe-background-sequential.h">

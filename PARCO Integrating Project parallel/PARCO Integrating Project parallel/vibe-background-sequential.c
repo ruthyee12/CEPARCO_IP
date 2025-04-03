@@ -53,7 +53,7 @@ Likewise, instead of a random selection of the neighboring model to be updated, 
 first_history(uint32_t n, uint8_t matchingThreshold, uint8_t matchingNumber, uint8_t* historyImage, uint8_t* image_data, uint8_t* segmentation_map);
 next_history(uint32_t n, uint8_t matchingThreshold, uint8_t matchingNumber, uint8_t* historyImage, uint8_t* image_data, uint8_t* segmentation_map);
 output_mask(uint32_t n, uint8_t* mask, uint8_t color_foreground, int neg1);
-
+extern void UpdateInnerBorder(uint32_t width, uint32_t height, uint32_t* jump, uint32_t* position, int* neighbor, uint8_t* image_data, uint8_t* updating_mask, uint8_t* historyImage, uint8_t* historyBuffer);
 
 #define NUMBER_OF_HISTORY_IMAGES 2
 
@@ -421,33 +421,39 @@ int32_t libvibeModel_Sequential_Update_8u_C1R(
     uint32_t shift, indX, indY;
     int x, y;
 
-    for (y = 1; y < height - 1; ++y) {
-        shift = rand() % width;
-        indX = jump[shift]; // index_jump should never be zero (> 1).
+    /*printf("Jump pointer in C: %p\n", (void*)jump);
+    for (int i = 0; i < 5; i++) {
+        printf("jump[%d] = %u at %p\n", i, jump[i], (void*)&jump[i]);
+    }*/
+    UpdateInnerBorder(width, height, jump, position, neighbor, image_data, updating_mask, historyImage, historyBuffer);
 
-        while (indX < width - 1) {
-            int index = indX + y * width;
+    //for (y = 1; y < height - 1; ++y) {
+    //    shift = rand() % width;
+    //    indX = jump[shift]; // index_jump should never be zero (> 1).
 
-            if (updating_mask[index] == COLOR_BACKGROUND) {
-                /* In-place substitution. */
-                uint8_t value = image_data[index];
-                int index_neighbor = index + neighbor[shift];
+    //    while (indX < width - 1) {
+    //        int index = indX + y * width;
 
-                if (position[shift] < NUMBER_OF_HISTORY_IMAGES) {
-                    historyImage[index + position[shift] * width * height] = value;
-                    historyImage[index_neighbor + position[shift] * width * height] = value;
-                }
-                else {
-                    int pos = position[shift] - NUMBER_OF_HISTORY_IMAGES;
-                    historyBuffer[index * numberOfTests + pos] = value;
-                    historyBuffer[index_neighbor * numberOfTests + pos] = value;
-                }
-            }
+    //        if (updating_mask[index] == COLOR_BACKGROUND) {
+    //            /* In-place substitution. */
+    //            uint8_t value = image_data[index];
+    //            int index_neighbor = index + neighbor[shift];
 
-            ++shift;
-            indX += jump[shift];
-        }
-    }
+    //            if (position[shift] < NUMBER_OF_HISTORY_IMAGES) {
+    //                historyImage[index + position[shift] * width * height] = value;
+    //                historyImage[index_neighbor + position[shift] * width * height] = value;
+    //            }
+    //            else {
+    //                int pos = position[shift] - NUMBER_OF_HISTORY_IMAGES;
+    //                historyBuffer[index * numberOfTests + pos] = value;
+    //                historyBuffer[index_neighbor * numberOfTests + pos] = value;
+    //            }
+    //        }
+
+    //        ++shift;
+    //        indX += jump[shift];
+    //    }
+    //}
 
     /* First row. */
     y = 0;

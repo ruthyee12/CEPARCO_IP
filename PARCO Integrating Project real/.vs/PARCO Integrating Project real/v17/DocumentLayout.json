@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\",
+  "WorkspaceRootPath": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\vibe-background-sequential.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\vibe-background-sequential.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\dirent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4F58C0BA-65DF-4E84-8D87-41A7BCB2BAE4}|PARCO Integrating Project real\\PARCO Integrating Project real.vcxproj|solutionrelative:PARCO Integrating Project real\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,36 +34,37 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "asmfunc.asm",
-              "DocumentMoniker": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm",
+              "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm",
               "RelativeDocumentMoniker": "PARCO Integrating Project real\\asmfunc.asm",
-              "ToolTip": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm",
+              "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\asmfunc.asm",
               "RelativeToolTip": "PARCO Integrating Project real\\asmfunc.asm",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-30T09:14:30.226Z"
+              "WhenOpened": "2025-04-03T04:03:17.546Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c",
+              "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c",
               "RelativeDocumentMoniker": "PARCO Integrating Project real\\main.c",
-              "ToolTip": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c",
+              "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\main.c",
               "RelativeToolTip": "PARCO Integrating Project real\\main.c",
-              "ViewState": "AQIAAO8AAAAAAAAAAAAwwAQBAAAAAAAA",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAwwPoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-25T10:43:05.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "dirent.h",
-              "DocumentMoniker": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h",
+              "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h",
               "RelativeDocumentMoniker": "PARCO Integrating Project real\\dirent.h",
-              "ToolTip": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h",
+              "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\dirent.h",
               "RelativeToolTip": "PARCO Integrating Project real\\dirent.h",
               "ViewState": "AQIAALUEAAAAAAAAAAAYwNYEAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -73,25 +74,27 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "vibe-background-sequential.c",
-              "DocumentMoniker": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c",
+              "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c",
               "RelativeDocumentMoniker": "PARCO Integrating Project real\\vibe-background-sequential.c",
-              "ToolTip": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c",
+              "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.c",
               "RelativeToolTip": "PARCO Integrating Project real\\vibe-background-sequential.c",
-              "ViewState": "AQIAADsBAAAAAAAAAAAWwEgBAAAAAAAA",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAAAAABAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T10:52:32.238Z"
+              "WhenOpened": "2025-03-25T10:52:32.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "vibe-background-sequential.h",
-              "DocumentMoniker": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h",
+              "DocumentMoniker": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h",
               "RelativeDocumentMoniker": "PARCO Integrating Project real\\vibe-background-sequential.h",
-              "ToolTip": "C:\\Users\\Theoni\\Desktop\\CEPARCO GIT\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h",
+              "ToolTip": "C:\\Users\\Lance\\source\\repos\\ruthyee12\\CEPARCO_IP\\PARCO Integrating Project real\\PARCO Integrating Project real\\vibe-background-sequential.h",
               "RelativeToolTip": "PARCO Integrating Project real\\vibe-background-sequential.h",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAwwAEBAAAOAAAA",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAwwAEBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T10:52:06.243Z"
+              "WhenOpened": "2025-03-25T10:52:06.243Z",
+              "EditorCaption": ""
             }
           ]
         }
